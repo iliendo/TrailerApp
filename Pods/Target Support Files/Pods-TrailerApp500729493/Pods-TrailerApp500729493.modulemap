@@ -1,0 +1,6 @@
+framework module Pods_TrailerApp500729493 {
+  umbrella header "Pods-TrailerApp500729493-umbrella.h"
+
+  export *
+  module * { export * }
+}
