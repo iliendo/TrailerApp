@@ -32,6 +32,7 @@ class DetailsController: UIViewController {
         
         // transparent navigationbar with white letters
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
         self.navigationController?.navigationBar.tintColor = .white

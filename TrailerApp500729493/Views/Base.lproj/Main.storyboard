@@ -81,7 +81,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="51I-0i-jEY" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="650"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rXK-bf-jqy">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXK-bf-jqy">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="300" id="7D4-am-SeG"/>
@@ -162,6 +162,7 @@
                     </view>
                     <size key="freeformSize" width="414" height="650"/>
                     <connections>
+                        <outlet property="UIScrollView" destination="fvc-j3-Wcu" id="DOm-Y7-2Vd"/>
                         <outlet property="bannerView" destination="rXK-bf-jqy" id="F5w-IU-Mfu"/>
                         <outlet property="buttonView" destination="1D1-zm-haS" id="E57-PT-Zla"/>
                         <outlet property="descriptionTextView" destination="PWM-fV-eau" id="3Q3-gc-3ps"/>
