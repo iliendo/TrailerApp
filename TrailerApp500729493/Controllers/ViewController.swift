@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         title = "Trailers"
         navigationController?.navigationBar.prefersLargeTitles = true
         
+        // Prepares the next screen
         tableView.delegate = self
         
         // Load the spinner until the data is retreived from the api

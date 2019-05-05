@@ -65,10 +65,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rXK-bf-jqy">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rXK-bf-jqy">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="CXp-iI-Jla"/>
+                                    <constraint firstAttribute="height" constant="300" id="6ZQ-6w-ter"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhp-BM-ei3">
@@ -97,6 +97,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1D1-zm-haS">
                                 <rect key="frame" x="348" y="395" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="playTrailer:" destination="kD0-0E-01Z" eventType="touchUpInside" id="LkS-SP-Ifz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -108,11 +111,14 @@
                             <constraint firstItem="PWM-fV-eau" firstAttribute="leading" secondItem="Y78-5u-Xdc" secondAttribute="leading" constant="20" id="Lfe-2w-db4"/>
                             <constraint firstItem="1cc-0o-Dmw" firstAttribute="leading" secondItem="Y78-5u-Xdc" secondAttribute="leading" constant="20" id="UgP-hQ-CJM"/>
                             <constraint firstItem="rXK-bf-jqy" firstAttribute="trailing" secondItem="Y78-5u-Xdc" secondAttribute="trailing" id="Uq7-ia-8kt"/>
-                            <constraint firstItem="hhp-BM-ei3" firstAttribute="top" secondItem="1cc-0o-Dmw" secondAttribute="bottom" constant="20" id="hHE-HA-nxb"/>
+                            <constraint firstItem="rXK-bf-jqy" firstAttribute="top" secondItem="gIx-AZ-6bN" secondAttribute="top" id="Utt-sg-xtO"/>
+                            <constraint firstItem="hhp-BM-ei3" firstAttribute="top" secondItem="1cc-0o-Dmw" secondAttribute="bottom" constant="20" id="VKa-RJ-C05"/>
+                            <constraint firstItem="rXK-bf-jqy" firstAttribute="leading" secondItem="Y78-5u-Xdc" secondAttribute="leading" id="Xch-zY-Pgv"/>
                             <constraint firstItem="1cc-0o-Dmw" firstAttribute="top" secondItem="Y78-5u-Xdc" secondAttribute="top" constant="173" id="i9R-sW-Wdb"/>
                             <constraint firstItem="PWM-fV-eau" firstAttribute="top" secondItem="1D1-zm-haS" secondAttribute="bottom" constant="20" id="jYU-3Q-M4i"/>
                             <constraint firstItem="Y78-5u-Xdc" firstAttribute="trailing" secondItem="PWM-fV-eau" secondAttribute="trailing" constant="20" id="jb5-oF-5ht"/>
                             <constraint firstItem="Y78-5u-Xdc" firstAttribute="trailing" secondItem="1D1-zm-haS" secondAttribute="trailing" constant="20" id="jhs-YK-nhJ"/>
+                            <constraint firstItem="rXK-bf-jqy" firstAttribute="trailing" secondItem="Y78-5u-Xdc" secondAttribute="trailing" id="zwe-gg-Ap5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y78-5u-Xdc"/>
                     </view>

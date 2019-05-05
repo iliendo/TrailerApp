@@ -62,9 +62,7 @@ class DetailsController: UIViewController {
         startMoviePlayer(url: movieUrl!)
     }
     
-    /*
-     * Spin up AVPlayer for given URL
-     */
+    
     func startMoviePlayer(url: URL) {
         
         let player = AVPlayer(url: url)
