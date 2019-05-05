@@ -50,6 +50,7 @@ class ViewController: UIViewController {
         })
     }
     
+    // Controls the spinner
     func createSpinner() -> SpinnerController {
         let child = SpinnerController()
         addChild(child)
@@ -60,6 +61,7 @@ class ViewController: UIViewController {
         return child
     }
     
+    // Controls the removal of the spinner
     func removeSpinner(spinner: SpinnerController) {
         spinner.willMove(toParent: nil)
         spinner.view.removeFromSuperview()
@@ -90,7 +92,6 @@ extension ViewController:UITableViewDataSource{
     }
 }
 
-// Set Detail view delegate
 extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -98,13 +99,13 @@ extension ViewController: UITableViewDelegate {
         // Define current storyboard
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
-        // Get a reference to the new controller
+        // Save a reference to of the controller
         let detailsController: DetailsController = storyboard.instantiateViewController(withIdentifier: "DetailsController") as! DetailsController
         
-        // Pass current trailer on to detail view
+        // Pass the selected trailer to the detailsscreen
         detailsController.movie = movieArray[indexPath.row]
         
-        // Set push view
+        // Pushview animation
         self.navigationController?.pushViewController(detailsController, animated: true)
     }
 }

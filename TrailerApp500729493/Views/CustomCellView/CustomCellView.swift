@@ -10,15 +10,13 @@ import UIKit
 
 final class CustomCellView: UITableViewCell {
     
+    // Initialize components
     @IBOutlet weak var imageViewContainer: UIImageView!
-    
     @IBOutlet weak var labelContainer: UILabel!
-    
     @IBOutlet weak var descriptionContainer: UITextView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
     }
     
     override func prepareForReuse() {

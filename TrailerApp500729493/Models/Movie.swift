@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Decodes the json and saves it in variables
 class Movie: Decodable {
     let id: Int
     let title: String
