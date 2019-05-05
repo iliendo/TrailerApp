@@ -31,8 +31,12 @@ class ViewController: UIViewController {
         title = "Trailers"
         navigationController?.navigationBar.prefersLargeTitles = true
         
+        // Load the spinner until the data is retreived from the api
+        let spinner = createSpinner()
         // Gets the json from the api
         Alamofire.request("https://appstubs.triple-it.nl/trailers/").responseData(completionHandler: {[weak self] (response) in guard let jsonData = response.data else {return}
+            
+            self?.removeSpinner(spinner: spinner)
             
             let jsonDecoder = JSONDecoder()
             // Decode an array of json data
@@ -41,6 +45,22 @@ class ViewController: UIViewController {
             
             self?.movieArray = contentItem!
         })
+    }
+    
+    func createSpinner() -> SpinnerController {
+        let child = SpinnerController()
+        addChild(child)
+        child.view.frame = view.frame
+        view.addSubview(child.view)
+        child.didMove(toParent: self)
+        
+        return child
+    }
+    
+    func removeSpinner(spinner: SpinnerController) {
+        spinner.willMove(toParent: nil)
+        spinner.view.removeFromSuperview()
+        spinner.removeFromParent()
     }
 }
 
