@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="62" y="110"/>
         </scene>
-        <!--View Controller-->
+        <!--Details Controller-->
         <scene sceneID="fMG-EA-22e">
             <objects>
-                <viewController id="kD0-0E-01Z" sceneMemberID="viewController">
+                <viewController restorationIdentifier="DetailsController" storyboardIdentifier="DetailsController" id="kD0-0E-01Z" customClass="DetailsController" customModule="TrailerApp500729493" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gIx-AZ-6bN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,6 +116,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y78-5u-Xdc"/>
                     </view>
+                    <connections>
+                        <outlet property="bannerView" destination="rXK-bf-jqy" id="F5w-IU-Mfu"/>
+                        <outlet property="buttonView" destination="1D1-zm-haS" id="E57-PT-Zla"/>
+                        <outlet property="descriptionTextView" destination="PWM-fV-eau" id="3Q3-gc-3ps"/>
+                        <outlet property="labelTextView" destination="hhp-BM-ei3" id="580-gf-xcn"/>
+                        <outlet property="posterView" destination="1cc-0o-Dmw" id="1kD-vz-Dmz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sr4-RN-BIn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

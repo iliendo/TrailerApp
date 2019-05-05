@@ -8,10 +8,12 @@
 
 import Foundation
 
-import Foundation
-
 class Movie: Decodable {
+    let id: Int
     let title: String
+    let url: String
     let posterImage: String
+    let stillImage: String
+    let genre: [String]
     let description: String
 }
